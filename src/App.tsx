@@ -6,6 +6,7 @@ import { Card } from './components/Card';
 import { Cardtwo } from './components/Cardtwo';
 import {PersonN} from './components/PersonN';
 import { PersonC } from './components/PersonC';
+import { RenderList } from './components/RenderList';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
             </C.ContainerSection>
           </li>
           <li>
-                <h1>Children do componente</h1>
+                <h2>Children do componente</h2>
               
               <Card>Frase de Efeito!</Card>
               <Cardtwo>
@@ -52,7 +53,7 @@ function App() {
               </Cardtwo>
           </li>
           <li>
-            <h1>Renderização Condicional</h1>
+            <h2>Renderização Condicional</h2>
             <C.ContainerSection>
               <PersonC
                 name="João Paulo"
@@ -64,6 +65,10 @@ function App() {
               />
               <PersonC/>
             </C.ContainerSection>
+          </li>
+          <li>
+            <h2>Renderizando Listas</h2>
+            <RenderList/>
           </li>
 
 
