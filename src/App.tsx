@@ -4,41 +4,57 @@ import {getWeekDay} from './functions/getWeekDay';
 import {Person} from './components/Person';
 import { Card } from './components/Card';
 import { Cardtwo } from './components/Cardtwo';
+import {PersonN} from './components/PersonN';
 
 function App() {
   return (
     <C.Container>
-      <h2>USANDO FUNÇÕES</h2>
-      <h1>{getWeekDay()}</h1>
+      <ol>
+        <li>
+          <h2>USANDO FUNÇÕES</h2>
+          <h3>{getWeekDay()}</h3>
+        </li>
+        <li>
+              <h2>PASSANDO PROPS PARA UM COMPONENTE</h2>
+            {/*AS PROPS DEVEM SER PASSADAS POR PARÂMETROS OS QUAIS SERÃO ACESSADOS DENTRO DO COMPONENTE
+            ATRAVÉS DE UM TYPE */}
+            <C.ContainerSection>
+              <Person
+              name="João Paulo"
+              avatar="https://images.chesscomfiles.com/uploads/v1/user/71670288.06b328a7.160x160o.04dd5a18dfeb.jpeg"
+              role={["Professor"]}
+              />
 
-      <h2>PASSANDO PROPS PARA UM COMPONENTE</h2>
-      <C.ContainerSection>
-        <Person
-        name="João Paulo"
-        avatar="https://images.chesscomfiles.com/uploads/v1/user/71670288.06b328a7.160x160o.04dd5a18dfeb.jpeg"
-        role={["Professor"]}
-        />
+              <Person
+              name='Magnus Carlsen'
+              avatar='https://images.chesscomfiles.com/uploads/v1/user/3889224.121e2094.160x160o.7e81e6058f8d.jpg'
+              role={['Enxadrista']}
+              />
+              {/*CHILDREN NÃO OBRIGATÓRIA*/}
+              <PersonN
+              name='Teste'
+              role={['Enxadrista']}
+              />
 
-        <Person
-        name='Magnus Carlsen'
-        avatar='https://images.chesscomfiles.com/uploads/v1/user/3889224.121e2094.160x160o.7e81e6058f8d.jpg'
-        role={['Enxadrista']}
-        />
-      </C.ContainerSection>
-      
-        <h1>Children do componente</h1>
-        <Card>Frase de Efeito!</Card>
-        <Cardtwo>
-          <>
-            <h3>Frase de efeito</h3>
-            <p>Testando</p>
-          </>
-        </Cardtwo>
+            </C.ContainerSection>
+          </li>
+          <li>
+                <h1>Children do componente</h1>
+              {/*  */}
 
-        
-      
+              <Card>Frase de Efeito!</Card>
+              <Cardtwo>
+                <>
+                  <h3>Frase de efeito</h3>
+                  <p>Testando</p>
+                </>
+              </Cardtwo>
+          </li>
+          <li>
+            <h1>Renderização Condicional</h1>
+          </li>
 
-
+      </ol>
     </C.Container>
   );
 }

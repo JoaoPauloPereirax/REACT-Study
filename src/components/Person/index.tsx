@@ -1,3 +1,4 @@
+import * as C from './style';
 type Props = {
      name: string;
      avatar: string;
@@ -5,7 +6,7 @@ type Props = {
 }
 export const Person = (props: Props) => {
      return (
-          <div>
+          <C.Container>
                <p>Nome: {props.name}</p>
                <img 
                src={props.avatar} 
@@ -14,6 +15,6 @@ export const Person = (props: Props) => {
                />
 
                <p>Profissão:{props.role[0]}</p>
-          </div>
+          </C.Container>
      );
 }
