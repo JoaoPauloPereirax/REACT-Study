@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# REPOSITÓRIO DESTINADO A CÓDIGOS DE ESTUDO E REVISÃO EM REACTJS E TYPESCRIPT
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

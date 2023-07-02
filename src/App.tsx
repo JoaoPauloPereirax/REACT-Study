@@ -5,6 +5,7 @@ import {Person} from './components/Person';
 import { Card } from './components/Card';
 import { Cardtwo } from './components/Cardtwo';
 import {PersonN} from './components/PersonN';
+import { PersonC } from './components/PersonC';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               role={['Enxadrista']}
               />
               {/*CHILDREN NÃO OBRIGATÓRIA*/}
+              {/*AQUI DERIA PASSADO DO VALOR DA VARIÁVEL avatar*/}
               <PersonN
               name='Teste'
               role={['Enxadrista']}
@@ -40,8 +42,7 @@ function App() {
           </li>
           <li>
                 <h1>Children do componente</h1>
-              {/*  */}
-
+              
               <Card>Frase de Efeito!</Card>
               <Cardtwo>
                 <>
@@ -52,7 +53,19 @@ function App() {
           </li>
           <li>
             <h1>Renderização Condicional</h1>
+            <C.ContainerSection>
+              <PersonC
+                name="João Paulo"
+                avatar="https://images.chesscomfiles.com/uploads/v1/user/71670288.06b328a7.160x160o.04dd5a18dfeb.jpeg"
+                role={["Professor"]}
+              />
+              <PersonC
+              name='Teste'
+              />
+              <PersonC/>
+            </C.ContainerSection>
           </li>
+
 
       </ol>
     </C.Container>
