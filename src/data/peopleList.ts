@@ -6,5 +6,7 @@ export const peopleList: People[] = [
      {id: 3, name: "Jogador 3", profession: "Professor"},
      {id: 4, name: "Jogador 4", profession: "Desenvolvedor"},
      {id: 5, name: "Jogador 5", profession: "Motorista"},
-     {id: 6, name: "Jogador 6", profession: "Matemático"}
+     {id: 6, name: "Jogador 6", profession: "Matemático"},
+     {id: 7, name: "Jogador 7", profession: "Estudante"},
+     {id: 8, name: "Jogador 8", profession: "Professor"}
 ]

@@ -7,6 +7,7 @@ import { Cardtwo } from './components/Cardtwo';
 import {PersonN} from './components/PersonN';
 import { PersonC } from './components/PersonC';
 import { RenderList } from './components/RenderList';
+import { FilterList } from './components/FilterList';
 
 function App() {
   return (
@@ -69,6 +70,10 @@ function App() {
           <li>
             <h2>Renderizando Listas</h2>
             <RenderList/>
+          </li>
+          <li>
+            <h2>Filtrando Listas</h2>
+            <FilterList/>
           </li>
 
 
