@@ -2,6 +2,8 @@ import React from 'react';
 import * as C from './App.styles';
 import {getWeekDay} from './functions/getWeekDay';
 import {Person} from './components/Person';
+import { Card } from './components/Card';
+import { Cardtwo } from './components/Cardtwo';
 
 function App() {
   return (
@@ -23,6 +25,17 @@ function App() {
         role={['Enxadrista']}
         />
       </C.ContainerSection>
+      
+        <h1>Children do componente</h1>
+        <Card>Frase de Efeito!</Card>
+        <Cardtwo>
+          <>
+            <h3>Frase de efeito</h3>
+            <p>Testando</p>
+          </>
+        </Cardtwo>
+
+        
       
 
 

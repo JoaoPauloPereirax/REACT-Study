@@ -1,0 +1,12 @@
+import { ReactNode } from "react";
+
+type Props = {
+     children: ReactNode; 
+} 
+export const Cardtwo = ({children}: Props) =>{
+     return (
+          <div>
+               {children}
+          </div>
+     );
+}
